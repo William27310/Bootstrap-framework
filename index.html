@@ -9,13 +9,12 @@
     <title>Document</title>
 </head>
 
-<body>
-    <div class="p-5 bg-primary">
-        <h1 class="display-1 fw-bold text-center text-light">Dylan Inc.</h1>
+<body class="d-flex flex-column min-vh-100">
+    <div class="bg-primary">
+        <h1 class="display-1 d-none d-sm-block fw-bold text-center text-light">Dylan Inc.</h1>
     </div>
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-primary">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
@@ -34,16 +33,43 @@
                     </li>
                 </ul>
             </div>
+            
+            <a class="navbar-brand @media: 430px" href="#">Navbar</a>
         </div>
     </nav>
 
-    <div class="row justify-content-center pt-5 pb-5">
+    <div class="row justify-content-around gap-5 pt-5 pb-5">
         <div class="card ms-5 me-5" style="width: 18rem;">
             <img src="assets/img/climatiseur.png" alt="...">
             <div class="card-body">
                 <h5 class="card-title">Climatiseur</h5>
                 <p class="card-text">DEVELOPPEMENT DURABLE</p>
-                <a href="#" class="btn btn-primary">Plus d'infos</a>
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalone">
+                    Plus d'infos
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModalone" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">RESPIRE INSPIRE</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                TU LE PRENDS OU TU LE PRENDS PAS OK ?!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="card ms-5 me-5" style="width: 18rem;">
@@ -51,7 +77,31 @@
             <div class="card-body">
                 <h5 class="card-title">Ventilateur</h5>
                 <p class="card-text">VENTILE TOI</p>
-                <a href="#" class="btn btn-primary">Plus d'infos</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModaltwo">
+                    Plus d'infos
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModaltwo" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">INSPIRE !!!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                PRENDS !!!!!!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
         <div class="card ms-5 me-5" style="width: 18rem;">
@@ -59,12 +109,37 @@
             <div class="card-body">
                 <h5 class="card-title">Piscine</h5>
                 <p class="card-text">BAIGNE TOI</p>
-                <a href="#" class="btn btn-primary">Plus d'infos</a>
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Plus d'infos
+                </button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                    aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5" id="exampleModalLabel">RESPIRE !!!!!!!</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                MAIS PRENDS !!!
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                                <button type="button" class="btn btn-primary">Save changes</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
         </div>
     </div>
 
-    <footer class="p-5 bg-primary">
+
+    <footer class="mt-auto p-4 bg-primary">
         <p class="fw-bold text-center text-light">Dylan Inc.</p>
     </footer>
 
